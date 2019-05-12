@@ -50,4 +50,8 @@ https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc
 GitHub page of the author
 https://github.com/fcwu/docker-ubuntu-vnc-desktop
 
+Potentially another interesting example
+https://blog.docker.com/2013/07/docker-desktop-your-desktop-over-ssh-running-inside-of-a-docker-container/
+
+
 
