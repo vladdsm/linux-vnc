@@ -1,3 +1,4 @@
 
 ssl/nginx.crt
 ssl/nginx.key
+.DS_Store
