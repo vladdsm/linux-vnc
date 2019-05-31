@@ -28,11 +28,11 @@ docker run -p 6080:80 -e USER=myuser -e HTTP_PASSWORD=mypassword -v /dev/shm:/de
 
 ### Generating self signed certificate
 
-mkdir -p ssl
-openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ssl/nginx.key -out ssl/nginx.crt
+`mkdir -p ssl`
+`openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ssl/nginx.key -out ssl/nginx.crt`
 
 Specify ssl port and forward...
-docker run -p 6081:443 -e SSL_PORT=443 -v ${PWD}/ssl:/etc/nginx/ssl -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc
+`docker run -p 6081:443 -e SSL_PORT=443 -v ${PWD}/ssl:/etc/nginx/ssl -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc`
 
 Access via https:/localhost:6081
 
